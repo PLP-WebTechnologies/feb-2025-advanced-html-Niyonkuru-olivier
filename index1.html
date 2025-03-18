@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External stylesheet link -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Our Registration Page</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Steps to Complete Your Registration:</h2>
+        <ol type="I"> <!-- Roman numeral list -->
+            <li>Fill in personal details</li>
+            <li>Select preferences</li>
+            <li>Submit form</li>
+        </ol>
+    </section>
+
+    <!-- External Image -->
+    <section>
+        <h2>Our Office</h2>
+        <img src="infra.jpeg" alt="Office" width="500">
+    </section>
+
+    <!-- Table of Contacts -->
+    <section>
+        <h2>Contact List</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>olivier</td>
+                    <td>123 Main St, City</td>
+                    <td>555-1234</td>
+                    <td>olivier@example.com</td>
+                </tr>
+                <tr>
+                    <td>shimwe</td>
+                    <td>456 Oak Rd, Town</td>
+                    <td>555-5678</td>
+                    <td>shimwe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary Johnson</td>
+                    <td>789 Pine Ln, Village</td>
+                    <td>555-9876</td>
+                    <td>mary@example.com</td>
+                </tr>
+                <tr>
+                    <td>James Brown</td>
+                    <td>101 Maple Ave, Hamlet</td>
+                    <td>555-1122</td>
+                    <td>james@example.com</td>
+                </tr>
+                <tr>
+                    <td>Linda White</td>
+                    <td>202 Cedar Blvd, Suburb</td>
+                    <td>555-3344</td>
+                    <td>linda@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8"><br><br>
+
+            <!-- Date Field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <!-- Dropdown Menu -->
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="India">India</option>
+            </select><br><br>
+
+            <!-- Radio Buttons -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label><br><br>
+
+            <!-- Checkboxes -->
+            <label>Interests:</label><br>
+            <input type="checkbox" id="sports" name="interests" value="Sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="music" name="interests" value="Music">
+            <label for="music">Music</label><br>
+            <input type="checkbox" id="reading" name="interests" value="Reading">
+            <label for="reading">Reading</label><br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <!-- Multimedia (Audio and Video) -->
+    <section>
+        <h2>Multimedia</h2>
+        
+        <!-- Audio -->
+        <h3>Listen to our welcome message:</h3>
+        <audio controls>
+            <source src="audio/welcome-message.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio><br><br>
+
+        <!-- Video -->
+        <h3>Watch our introduction video:</h3>
+        <video width="320" height="240" controls>
+            <source src="video/intro.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 HTML5 Features Demo | All rights reserved</p>
+    </footer>
+
+</body>
+</html>
